@@ -111,6 +111,67 @@ main {
   font-weight: 700;
 }
 
+
+/* feature-section styles */
+
+.f-container{
+  margin-top: 120px;
+  display: flex;
+  gap: 100px;
+}
+.f-title{
+  color:  #131313;
+font-size: 2.8rem;
+font-weight: 700;
+border-left: 5px solid #FF900E;
+padding-left: 20px;
+}
+.f-content .f-card{
+  padding: 30px;
+  margin-bottom: 20px;
+border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+
+}
+.f-content .f-card h2{
+  color:  #131313;
+
+font-size: 1.25rem;
+font-weight: 600;
+
+}
+
+.ten-year-batch{
+  border-radius: 8px;
+background: #FF900E;
+color: #FFF;
+text-align: center;
+font-weight: 700;
+width: 210px ;
+padding: 20px;
+position: relative;
+top: -80px;
+left: -80px;
+
+}
+.ten-year-batch h2{
+  font-size: 2.8rem;
+  margin: 0;
+}
+.ten-year-batch p{
+  color: #FFF;
+font-size: 1.6rem;
+font-weight: 500;
+  margin: 0;
+}
+.feature-img img{
+  height: 90%;
+  /* width: 95%; */
+  margin-left: 50px;
+}
+
+
 /* facts styles */
 .facts-title{
   color: #131313;
@@ -180,6 +241,20 @@ line-height: 26px;
     
 }
 
+/* Footer */
+
+.foot{
+  display: flex;
+  max-width: 1440px;
+  height: 100px;
+  border-radius: 8px;
+  background: #FFF4E7;
+align-items: center;
+justify-content: center;
+margin: 70px 301px;
+font-size: 1.25rem;
+font-weight: 400;
+}
 
 
 
@@ -222,11 +297,32 @@ line-height: 26px;
     gap: 30px;
     align-items: center;
   }
-.sponsors-container img{
- 
-}
+
+  .foot{
+    flex-direction: column;
+    margin: 70px 0 120px;
+    font-size: 0.7rem;
+    
+    
+  }
+
+  .f-container{
+    flex-direction:column;
+    
+  }
+  .feature-img img{
+    margin: 0 auto;
+    width: 100%;
+  }
+  .ten-year-batch{
+    margin: 0 40%;
+    width: 210px;
+    padding: 10px;
+  }
+
 
 }
+
 
 /* Tab Devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -246,6 +342,29 @@ line-height: 26px;
 
   .banner-title {
     font-size: 2rem;
+  }
+
+  .foot{
+    flex-direction: column;
+    margin: 70px 0 120px;
+    font-size: 0.7rem;
+    
+    
+  }
+
+  .f-container{
+    flex-direction:column;
+    
+  }
+  .feature-img img{
+    margin: 0 auto;
+    width: 100%;
+  }
+  .ten-year-batch{
+    margin: 0 49%;
+
+    width: 210px;
+    padding: 10px;
   }
 
  
