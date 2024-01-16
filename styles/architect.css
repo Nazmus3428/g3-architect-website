@@ -111,6 +111,79 @@ main {
   font-weight: 700;
 }
 
+/* facts styles */
+.facts-title{
+  color: #131313;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  }
+  
+  .facts-card-container{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin-top: 30px;
+
+    
+  
+  }
+  
+  .card{
+    text-align: center;
+    padding: 20px 5px;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+  
+  }
+  
+  .card .card-stats{
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #424242;
+    margin: 5px 0;
+  
+  }
+  .card .card-title{
+  color:  #727272;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin:2px 0;
+  }
+
+/* Sponsor Section */
+
+.sponsors-title{
+  text-align: center;
+  color:  #131313;
+font-size: 2.8rem;
+font-weight: 700;
+}
+.sponsors-section p{
+text-align: center;
+font-weight: 400;
+line-height: 26px;
+}
+
+.sponsors-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 30px;
+
+}
+.sponsors-container img{
+  width: 100px;
+    height: 70%;
+    
+}
+
+
+
+
+
 /* responsive media queries */
 
 /* Mobile Devices */
@@ -119,8 +192,9 @@ main {
     padding: 20px;
   }
 
-  nav {
+  nav,.sponsors-container {
     flex-direction: column;
+    align-items: center;
   }
 
   .banner-title {
@@ -137,13 +211,20 @@ main {
     grid-template-columns: 1fr;
     padding-top: 30px;
   }
-  .team-content {
+  
+  .team-content, .facts-card-container {
     padding-right: 20px;
     padding-left: 20px;
   }
 
-
-
+  .facts-card-container{
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+.sponsors-container img{
+ 
+}
 
 }
 
@@ -159,10 +240,6 @@ main {
   main{
     margin: 70px auto;
   }
-  /* .team-img-container{
-    grid-template-columns: ;
-    /* padding-top: 30px; */
-  } */
   .team-content{
     width: 50vw;
   }
@@ -176,23 +253,22 @@ main {
 }
 
 /* xL Devices */
-@media screen and (min-width: 993px) and (max-width: 1240px) {
+@media screen and (min-width: 992px) and (max-width: 1240px) {
   header {
     padding: 30px 50px;
   }
   main{
     margin: 70px auto;
   }
-  nav {
+  nav, .team-container{
     flex-direction: column;
   }
-.team-container {
-    flex-direction: column-reverse;
-  }
-  /* .team-content{
+
+  .team-content{
     width: 50vw;
-  } */
+  }
   .banner-title {
     font-size: 3rem;
   }
 }
+
